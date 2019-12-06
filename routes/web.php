@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/login','User\LoginController@');
+Route::prefix('login')->group(function () {
+    //品牌
+    Route::get('create', 'User\LoginController@create');
+    Route::post('store', 'User\LoginController@store');
+});
