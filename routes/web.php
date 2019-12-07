@@ -19,5 +19,6 @@ Route::get('/login','User\LoginController@');
 Route::prefix('login')->group(function () {
     //品牌
     Route::get('create', 'User\LoginController@create');
+    Route::get('baidu', 'User\LoginController@baidu');
     Route::post('store', 'User\LoginController@store');
 });

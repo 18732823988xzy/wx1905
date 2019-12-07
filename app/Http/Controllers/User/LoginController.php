@@ -12,8 +12,12 @@ class LoginController extends Controller
             return view('user.login.create');
         }
         public  function store(){
-            
+
         }
+        //请求百度
+        public function baidu(){
+
+}
 
 
 
